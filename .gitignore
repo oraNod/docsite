@@ -1,0 +1,11 @@
+# Ignore Python stuff
+.Python
+env/
+build/
+venv/
+# MkDocs build directory
+site/
+# MKDocs plugin cache
+.cache/
+# VSCode stuff
+.vscode/
