@@ -9,7 +9,7 @@ build:
     python: "3.11"
   # Build the Ansible docsite
   commands:
-    - python -m pip install --upgrade --no-cache-dir pip
+    - python -m venv "${READTHEDOCS_VIRTUALENV_PATH}"
     - python -m pip install --exists-action=w --no-cache-dir -r ./requirements.in -c ./requirements.txt
     - python build.py
     - mkdir -p _readthedocs/html/
