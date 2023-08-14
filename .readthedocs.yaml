@@ -13,5 +13,5 @@ build:
     - >-
       "${READTHEDOCS_VIRTUALENV_PATH}"/bin/python -m pip install --exists-action=w -r requirements.in -c requirements.txt
     - "${READTHEDOCS_VIRTUALENV_PATH}"/bin/python -I build.py
-    - mkdir -p _readthedocs/html/
-    - cp -r output/* _readthedocs/html/
+    - mkdir -pv "${READTHEDOCS_OUTPUT}"
+    - cp -rv output "${READTHEDOCS_OUTPUT}"/html
