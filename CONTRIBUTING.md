@@ -23,5 +23,5 @@ python build.py
 
 You can find generated HTML and other assets in the ``output`` folder.
 
-[Ansible code of conduct]: http://docs.ansible.com/ansible/latest/community/code_of_conduct.html
+[Ansible code of conduct]: https://docs.ansible.com/ansible/latest/community/code_of_conduct.html
 [codeofconduct@ansible.com]: mailto:codeofconduct@ansible.com
