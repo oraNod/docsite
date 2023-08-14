@@ -1,19 +1,15 @@
 import shutil
-import sass
-import glob
-
 from pathlib import Path
+
 from staticjinja import Site
-from yaml import load, Loader
+from yaml import Loader, load
+
+import sass
 
 def data():
     data_dict = {}
-    yaml = glob.glob("data/*.yaml")
-
-    for file_path in yaml:
-        file_name = file_path.split("/")[-1].split(".")[0]
-        with open(file_path, "r") as file:
-            data_dict[file_name] = load(file, Loader=Loader)
+    yaml = Path("./data").glob("*.yaml")
+    data_dict = {file_path.stem: load(file_path.open(), Loader=Loader) for file_path in yaml}
 
     return data_dict
 
