@@ -10,7 +10,8 @@ build:
   # Build the Ansible docsite
   commands:
     - python -m venv "${READTHEDOCS_VIRTUALENV_PATH}"
-    - python -m pip install --exists-action=w --no-cache-dir -r ./requirements.in -c ./requirements.txt
+    - >-
+      "${READTHEDOCS_VIRTUALENV_PATH}"/bin/python -m pip install --exists-action=w -r requirements.in -c requirements.txt
     - python build.py
     - mkdir -p _readthedocs/html/
     - cp -r output/* _readthedocs/html/
