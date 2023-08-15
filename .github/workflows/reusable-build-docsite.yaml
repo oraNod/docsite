@@ -18,7 +18,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.in -c requirements.txt
       - name: Generate assets for the docs landing page
-        run: python build.py
+        run: python -I -Werror build.py
       - name: Copy sitemaps, redirects, and robots.txt files
         run: cp -v *-sitemap.xml .htaccess robots.txt output/
       - name: Deploy to the prod branch
