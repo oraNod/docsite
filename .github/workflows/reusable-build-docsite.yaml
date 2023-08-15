@@ -22,8 +22,9 @@ jobs:
         run: python -I -Werror build.py
       - name: Copy sitemaps, redirects, and robots.txt files
         run: cp -v *-sitemap.xml .htaccess robots.txt output/
-      - name: Deploy to the prod branch
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Create a downloadable archive of docs build
+        uses: actions/upload-artifact@v3
         with:
-          folder: output
-          branch: prod
+          name: docsite-html-assets
+          path: output/*
+          retention-days: 7
