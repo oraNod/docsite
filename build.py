@@ -7,7 +7,6 @@ from yaml import Loader, load
 import sass
 
 def data():
-    data_dict = {}
     yaml = Path("./data").glob("*.yaml")
     data_dict = {file_path.stem: loads(file_path.read_text(), Loader=Loader) for file_path in yaml}
 
