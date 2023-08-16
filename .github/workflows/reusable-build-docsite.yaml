@@ -12,16 +12,12 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v3
+      - name: Set up nox
+        uses: wntrblm/nox@2023.04.22
         with:
-          python-version: "3.11"
-      - name: Install requirements
-        run: python -Im pip install nox
-      - name: Generate assets for the docs landing page
-        env:
-          PYTHONWARNINGS: error
-        run: python -Im nox -s build
+          python-versions: "3.11"
+      - name: Build the docsite with nox
+        run: nox -e build
       - name: Create a downloadable archive of docs build
         uses: actions/upload-artifact@v3
         with:
