@@ -6,4 +6,4 @@ def build(session: nox.Session):
       "-r", "requirements.in",
       "-c", "requirements.txt",
     )
-    session.run("python", -I, "build.py", *session.posargs)
+    session.run("python", "-I", "build.py", *session.posargs)
