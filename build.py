@@ -21,7 +21,12 @@ def clean_buildpath(output_dir):
 
 
 def main():
-    buildpath = Path("output")
+    try:
+        build_dir_str = sys.argv[1]
+    except IndexError:
+        build_dir_str = "output"
+
+    buildpath = Path(build_dir_str)
     clean_buildpath(buildpath)
 
     site = Site.make_site()
