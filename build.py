@@ -1,4 +1,5 @@
 import shutil
+import sys
 from pathlib import Path
 
 from staticjinja import Site
@@ -7,7 +8,7 @@ from yaml import Loader, load
 import sass
 
 
-def data():
+def load_page_data():
     yaml = Path("./data").glob("*.yaml")
     return {
         file_path.stem: load(file_path.read_text(), Loader=Loader) for file_path in yaml
@@ -29,7 +30,7 @@ def main():
 
     site = Site.make_site()
     site.outpath = buildpath
-    site.contexts = [(".*.html", data)]
+    site.contexts = [(".*.html", load_page_data)]
     # disable automatic reloading
     site.render(use_reloader=False)
 
