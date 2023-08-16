@@ -17,8 +17,7 @@ def data():
 
 
 def clean_buildpath(output_dir):
-    if output_dir.exists() and output_dir.is_dir():
-        shutil.rmtree(output_dir)
+    shutil.rmtree(output_dir, ignore_errors=True)
 
 
 def main():
