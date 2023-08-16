@@ -15,4 +15,4 @@ build:
     - >-
       "${READTHEDOCS_VIRTUALENV_PATH}"/bin/python -I build.py
     - mkdir -pv "${READTHEDOCS_OUTPUT}"/html
-    - cp -rv output "${READTHEDOCS_OUTPUT}"/html
+    - cp -rv output/* "${READTHEDOCS_OUTPUT}"/html
