@@ -1,5 +1,8 @@
 #-c constraints.in # <-- contains known limitations
 
+# staticjinja generates html from templates
 staticjinja
+# pyyaml loads page data from yaml files
 pyyaml
+# libsass compiles sass files to css
 libsass
