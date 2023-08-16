@@ -9,11 +9,9 @@ import sass
 
 def data():
     yaml = Path("./data").glob("*.yaml")
-    data_dict = {
+    return {
         file_path.stem: load(file_path.read_text(), Loader=Loader) for file_path in yaml
     }
-
-    return data_dict
 
 
 def clean_buildpath(output_dir):
