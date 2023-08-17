@@ -16,6 +16,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: "3.11"
+      - name: Check requirements.in
+        run: |
+          cat requirements.in
+      - name: Check requirements.txt
+        run: |
+          cat requirements.txt
       - name: Pip install nox
         run: python -Im pip install nox
       - name: Generate assets for the docs landing page
