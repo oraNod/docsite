@@ -20,17 +20,30 @@ I'm a general technologist who has an idea about automation. I might already hav
 
 <img src="https://i.imgur.com/VrX4ygq.png" alt="Person using a computer" width="100"/>
 
-I write automation content like playbooks and roles. When writing playbooks and roles I like to evaluate multiple options to find simple solutions to complex problems.
+I write automation content like playbooks and roles.
+When writing playbooks and roles I like to evaluate multiple options to find simple solutions to complex problems.
 
 * **Needs:** Needs best practice information that is up to date and complete.
 * **Attitude:** Does not like out of date, incomplete, or missing documentation.
 * **Knowledge:** Proficient. I am at home on the command line and enjoy technical challenges.
 
+## Ansible AWX user
+
+<img src="https://raw.githubusercontent.com/ansible/logos/main/awx/awx-icon.png" alt="Angry spud" width="100"/>
+
+I am an engineer who is responsible for using Ansible to automate the configuration and management of IT infrastructure such as servers and applications.
+I want to use an API that extends Ansible in a way that allows me to streamline task execution and monitor performance.
+
+* **Needs:** Understand how to integrate AWX with other tools and systems, track task execution, overcome performance issues, and comply with security standards.
+* **Attitude:** Wants to make processes more efficient to reduce manual workload. Also wants to create reliable, scalable systems that are easy to maintain. Values collaboration and eager to learn about new technology.
+* **Knowledge:** Strong understanding of Ansible automation and open-source technologies.
+
 ## Developer
 
 <img src="https://i.imgur.com/QufXcjw.png" alt="Person using a computer" width="100"/>
 
-I write, or want to start writing, Ansible plugins and modules in Python or other programming languages. I might also want to write code for Ansible projects such as Lint, Molecule, or Event-driven Ansible.
+I write, or want to start writing, Ansible plugins and modules in Python or other programming languages.
+I might also want to write code for Ansible projects such as Lint, Molecule, or Event-driven Ansible.
 
 * **Needs:** Understand programmatic options and their expected behaviour.
 * **Attitude:** Technically curious and prefers verbosity.
@@ -40,7 +53,9 @@ I write, or want to start writing, Ansible plugins and modules in Python or othe
 
 <img src="https://i.imgur.com/GY18SFy.png" alt="Person using a computer" width="100"/>
 
-I work with the community to maintain one or more collections as part of the Ansible package. Alternatively I might want to create my own collection and set everything up so I can run and maintain my collection. I might also be interested in working on community tooling such as Antsibull or other projects.
+I work with the community to maintain one or more collections as part of the Ansible package.
+Alternatively I might want to create my own collection and set everything up so I can run and maintain my collection.
+I might also be interested in working on community tooling such as Antsibull or other projects.
 
 * **Needs:** Clear path for creating collections from scratch and optionally getting them included in the Ansible package. Guidance on lifecycles and maintenance guidelines.
 * **Attitude:** Often busy with another more primary role.

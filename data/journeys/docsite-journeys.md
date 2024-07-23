@@ -73,13 +73,36 @@ Milestone: Share automation content
   Create a new collection
   Upload a collection to Ansible Galaxy
 
-Milestone: Schedule and run automation jobs [TODO Add AWX overview, API]
+Milestone: Schedule and run automation jobs
   Execute automation jobs on demand
   Schedule automation jobs
 
 Milestone: Embed automation in systems
   Build execution environment with specific dependencies
   Use execution environments with AWX jobs
+```
+
+## Ansible AWX users
+
+```yaml
+Milestone: Learn about AWX
+  Understand the basics of Ansible AWX
+  Understand the basics of AWX Operator
+  Find AWX content on the Ansible forum
+
+Milestone: Try out AWX
+  Install with the AWX Operator
+  Complete the AWX quickstart
+
+Milestone: Start using AWX
+  Provision users
+  Build an execution environment
+  Create an automation job in the ee
+
+Milestone: Improve AWX performance
+  Schedule jobs and create workflows
+  Configure monitoring and capacity planning
+  Improve database usage
 ```
 
 ## Developers
